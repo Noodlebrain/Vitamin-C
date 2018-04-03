@@ -45,7 +45,7 @@ async def action(message, client):
                     await client.send_message(message.channel, msg)
 
                 elif len(hyper_ret) > 1:
-                    msg = 'Multiple results found: {0}'.format(", ".join(x for x in hyper_ret))
+                    msg = 'Multiple results found: \"{0}\"'.format("\", \"".join(x for x in hyper_ret))
                     await client.send_message(message.channel, msg)
 
                 else:
@@ -65,7 +65,7 @@ async def action(message, client):
                 await client.send_message(message.channel, msg)
 
             elif len(card_ret) > 1:
-                msg = 'Multiple results found: {0}'.format(", ".join(x for x in card_ret))
+                msg = 'Multiple results found: \"{0}\"'.format("\", \"".join(x for x in card_ret))
                 await client.send_message(message.channel, msg)
 
             else:
@@ -105,7 +105,7 @@ def findHyper(char):
     # search 100% OJ Wikia for names of characters if there is no exact match
     return wikiaSearch(char, True)
 
-# Searches the 100% OJ Wikia for titles on its page - charsOnly is boolean to search for characters only, or all cards
+# Searches the 100% OJ Wikia for titles on its page - charsOnly is boolean to search for characters only, or for all cards
 def wikiaSearch(string, charsOnly):
     result_list = []
     try:
