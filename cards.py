@@ -32,23 +32,24 @@ async def action(message, client):
     results_list = re.findall(card_regex, message.content.lower().strip())
 
     for result in results_list:
-        c = result
-        # checks if the string between the [] has .hyper at the end
+        c = result.strip()
+
+        # check if the string between the [] has .hyper at the end
         if isHyper(result):
             char_match = re.search(hyper_regex, result.strip())
             if char_match:
                 character = char_match.groups()[0].strip()
                 hyper_ret = findHyper(character)
-                if hyper_ret.success == False:
+                if len(hyper_ret) < 1:
                     msg = 'Could not find what you searched for, try again.'
                     await client.send_message(message.channel, msg)
 
-                elif len(hyper_ret.results) > 1:
-                    msg = 'Multiple results found: {0}'.format(", ".join(x for x in hyper_ret.results))
+                elif len(hyper_ret) > 1:
+                    msg = 'Multiple results found: {0}'.format(", ".join(x for x in hyper_ret))
                     await client.send_message(message.channel, msg)
 
                 else:
-                    c = hyper_ret.results[0].lower()
+                    c = hyper_ret[0].lower()
             else:
                 msg = 'It seems like you didn\'t put anything before \".hyper\", try again'
                 await client.send_message(message.channel, msg)
@@ -59,16 +60,16 @@ async def action(message, client):
 
         else:   # no exact match, so search Wikia instead
             card_ret = wikiaSearch(c, False)
-            if card_ret.success == False:
+            if len(card_ret) < 1:
                 msg = 'Could not find what you searched for, try again.'
                 await client.send_message(message.channel, msg)
 
-            elif len(card_ret.results) > 1:
-                msg = 'Multiple results found: {0}'.format(", ".join(x for x in card_ret.results))
+            elif len(card_ret) > 1:
+                msg = 'Multiple results found: {0}'.format(", ".join(x for x in card_ret))
                 await client.send_message(message.channel, msg)
 
             else:
-                c = card_ret.results[0]
+                c = card_ret[0]
                 embed_msg = createEmbed(c)
                 await client.send_message(message.channel, embed = embed_msg)
 
@@ -80,9 +81,9 @@ def createEmbed(card):
 
     if cards[card]['type'] == 'Character':
         embed_message.description = 'Availability: ' + cards[card]['availability']
-        if 'flavor' in cards[card].keys():
-            embed_message.set_footer(text = cards[card]['flavor'])
 
+    if 'flavor' in cards[card].keys():
+        embed_message.set_footer(text = cards[card]['flavor'])
     embed_message.set_image(url = cards[card]['image'])
     embed_message.color = set_color(cards[card]['type'])
     return embed_message
@@ -96,33 +97,30 @@ def isHyper(string):
 
 # Finds the name of a character's hyper card.
 def findHyper(char):
-    ret = ReturnResult([], True)
+    ret = []
     if char in cards.keys():
         if cards[char]['type'] == 'Character':
-            ret.results.append(cards[char]['hyper'])
+            ret.append(cards[char]['hyper'])
             return ret
-    # search 100% OJ Wikia for titles if there is no exact match
+    # search 100% OJ Wikia for names of characters if there is no exact match
     return wikiaSearch(char, True)
 
 # Searches the 100% OJ Wikia for titles on its page - charsOnly is boolean to search for characters only, or all cards
 def wikiaSearch(string, charsOnly):
-    ret = ReturnResult([], True)
+    result_list = []
     try:
-        search_results = wikia.search('onehundredpercentorangejuice', char, 2)
+        search_results = wikia.search('onehundredpercentorangejuice', string, 2)
         for result in search_results:
             title = result.lower().strip()
             if title in cards.keys():
-                if charsOnly:
+                if charsOnly == True:
                     if cards[title]['type'] == 'Character':
-                        ret.results.append(title)
+                        result_list.append(title)
                 else:
-                    ret.results.append(title)
-    except:
-        ret.success = False
-        return ret
-    if len(ret.results) < 1:
-        ret.success = False
-    return ret
+                    result_list.append(title)
+    except ValueError:
+        return result_list
+    return result_list
 
 
 # Sets the color of the Discord embed based on the card type
