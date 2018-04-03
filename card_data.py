@@ -85,7 +85,7 @@ cards = {
                         'type': 'Character',
                         'hyper': 'Air Strike',
                         'availability': 'Unlockable',
-                        'flavor': '\"*Ara ara~*\"'},
+                        'flavor': '\"Ara ara~\"'},
 
             'peat' : {  'title': 'Peat',
                         'image': 'https://i.imgur.com/yb2Q01y.png',
@@ -161,7 +161,7 @@ cards = {
             'blue crow the second' : {  'title': 'Blue Crow the Second',
                                         'image': 'https://i.imgur.com/hMbzDij.png',
                                         'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Peat/Hyper',
-                                        'type': 'Hyper'},                                
+                                        'type': 'Hyper'},
 
             'star blasting fuse' : {'title': 'Star Blasting Fuse',
                                     'image': 'https://i.imgur.com/PlcPxzV.png',
