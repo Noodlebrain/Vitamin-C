@@ -39,6 +39,20 @@ cards = {
                             'hyper': 'x16 Big Rocket',
                             'availability': 'Default'},
 
+            'star breaker' : {  'title': 'Star Breaker',
+                                'image': 'https://i.imgur.com/4432L2z.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Star_Breaker',
+                                'type': 'Character',
+                                'hyper': 'Star Blasting Fuse',
+                                'availability': 'DLC 7 - Breaker Pack'},
+
+            'sweet breaker' : { 'title': 'Sweet Breaker',
+                                'image': 'https://i.imgur.com/msZulaU.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Sweet_Breaker',
+                                'type': 'Character',
+                                'hyper': 'Melting Memories',
+                                'availability': 'DLC 7 - Breaker Pack'},
+
 
             # Character-specific Hyper cards
             'protagonist\'s privilege' : {  'title': 'Protagonist\'s Privilege',
@@ -60,6 +74,20 @@ cards = {
                                 'image': 'https://i.imgur.com/42GG1KI.png',
                                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Marc/Hyper',
                                 'type': 'Hyper'},
+
+            'star blasting fuse' : {'title': 'Star Blasting Fuse',
+                                    'image': 'https://i.imgur.com/PlcPxzV.png',
+                                    'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Star_Breaker/Hyper',
+                                    'type': 'Hyper'},
+            'invisible bomb' : {'title': 'Invisible Bomb',
+                                'image': 'https://i.imgur.com/UMzUXJX.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Star_Breaker/Hyper',
+                                'type': 'Hyper'},
+
+            'melting memories' : {  'title': 'Melting Memories',
+                                    'image': 'https://i.imgur.com/QmutVPW.png',
+                                    'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Sweet_Breaker/Hyper',
+                                    'type': 'Hyper'},
 
             # Enemies
             'chicken (enemy)' : {   'title': 'Chicken (enemy)',

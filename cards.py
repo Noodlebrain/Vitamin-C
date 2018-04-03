@@ -69,7 +69,7 @@ async def action(message, client):
                 await client.send_message(message.channel, msg)
 
             else:
-                c = card_ret[0]
+                c = card_ret[0].lower()
                 embed_msg = createEmbed(c)
                 await client.send_message(message.channel, embed = embed_msg)
 
@@ -79,7 +79,7 @@ def createEmbed(card):
                             type = 'rich',
                             url = cards[card]['source'])
 
-    if cards[card]['type'] == 'Character':
+    if 'availability' in cards[card].keys():
         embed_message.description = 'Availability: ' + cards[card]['availability']
 
     if 'flavor' in cards[card].keys():
@@ -111,14 +111,13 @@ def wikiaSearch(string, charsOnly):
     try:
         search_results = wikia.search('onehundredpercentorangejuice', string, 2)
         for result in search_results:
-            title = result.lower().strip()
-            if title in cards.keys():
+            if result.lower().strip() in cards.keys():
                 if charsOnly == True:
-                    if cards[title]['type'] == 'Character':
-                        result_list.append(title)
+                    if cards[result.lower().strip()]['type'] == 'Character':
+                        result_list.append(result.strip())
                 else:
-                    result_list.append(title)
-    except ValueError:
+                    result_list.append(result.strip())
+    except ValueError: # strangely, the wikia.search() method throws a ValueError if it doesn't get any search results
         return result_list
     return result_list
 
