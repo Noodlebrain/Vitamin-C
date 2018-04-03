@@ -12,7 +12,7 @@ cards = {
                                                                         'image': 'https://i.imgur.com/Aux5Xdh.png',
                                                                         'source': 'https://kakashi-nenpo.com/jp/res/16966+50.html#21686',
                                                                         'type': 'Fucking RIP',
-                                                                        'flavor': 'Basically, how it feels to play Suguri half the time.'},
+                                                                        'flavor': 'Basically, how it feels to play Suguri half of the time.'},
 
             # Cards
 
@@ -30,7 +30,8 @@ cards = {
                         'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/QP',
                         'type': 'Character',
                         'hyper': 'Hyper Mode',
-                        'availability': 'Default'},
+                        'availability': 'Default',
+                        'flavor': 'Also check out QP (Dangerous).'},
 
             'suguri' : {    'title': 'Suguri',
                             'image': 'https://i.imgur.com/zlmJhvz.png',
@@ -38,7 +39,7 @@ cards = {
                             'type': 'Character',
                             'hyper': 'Accelerator',
                             'availability': 'Default',
-                            'flavor': 'I\'M ACCELERATING'},
+                            'flavor': 'Also check out Suguri (Ver.2).'},
 
             'marc' : {      'title': 'Marc',
                             'image': 'https://i.imgur.com/uakQhfx.png',
@@ -52,14 +53,16 @@ cards = {
                             'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Yuki',
                             'type': 'Character',
                             'hyper': 'Gamble!',
-                            'availability': 'Unlockable'},
+                            'availability': 'Unlockable',
+                            'flavor': 'Also check out Yuki (Dangerous).'},
 
             'aru' : {       'title': 'Aru',
                             'image': 'https://i.imgur.com/4x4rmwb.png',
                             'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Aru',
                             'type': 'Character',
                             'hyper': 'Present For You',
-                            'availability': 'Unlockable'},
+                            'availability': 'Unlockable',
+                            'flavor': 'Also check out Aru (Scramble).'},
 
             'hime' : {      'title': 'Hime',
                             'image': 'https://i.imgur.com/SDHLGY0.png',
@@ -68,6 +71,13 @@ cards = {
                             'hyper': 'Binding Chains',
                             'availability': 'Unlockable'},
 
+            'sora' : {  'title': 'Sora',
+                        'image': 'https://i.imgur.com/sUvoh8H.png',
+                        'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Sora',
+                        'type': 'Character',
+                        'hyper': 'Extraordinary Specs',
+                        'availability': 'Unlockable',
+                        'flavor': 'Also check out Sora (Military).'},
 
             'star breaker' : {  'title': 'Star Breaker',
                                 'image': 'https://i.imgur.com/4432L2z.png',
@@ -108,7 +118,8 @@ cards = {
             'gamble!' : {   'title': 'Gamble!',
                             'image': 'https://i.imgur.com/GCvfufb.png',
                             'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Yuki/Hyper',
-                            'type': 'Hyper'},
+                            'type': 'Hyper',
+                            'flavor': 'You end up killing yourself half of the time, but...'},
 
             'present for you' : {   'title': 'Present For You',
                                     'image': 'https://i.imgur.com/0Mlr5Pk.png',
@@ -119,6 +130,12 @@ cards = {
                                 'image': 'https://i.imgur.com/9745ZAZ.png',
                                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Hime/Hyper',
                                 'type': 'Hyper'},
+
+            'extraordinary specs' : {   'title': 'Extraordinary Specs',
+                                        'image': 'https://i.imgur.com/JrPSZiP.png',
+                                        'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Sora/Hyper',
+                                        'type': 'Hyper',
+                                        'flavor': '\"I hate RNG but I still play this game\"'}                    
 
             'star blasting fuse' : {'title': 'Star Blasting Fuse',
                                     'image': 'https://i.imgur.com/PlcPxzV.png',
