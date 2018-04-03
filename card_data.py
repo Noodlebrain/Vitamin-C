@@ -4,7 +4,15 @@ cards = {
             'pot of greed' : {  'title': 'Pot of Greed',
                                 'image': 'https://i.imgur.com/fQc6cDK.png',
                                 'source': 'https://www.youtube.com/watch?v=Ay_S8NjPEXk',
-                                'type': 'Boost'},
+                                'type': 'Boost',
+                                'availability': 'GameBanana',
+                                'flavor': 'Let\'s be honest, Nice Present is basically Pot of Greed.'},
+
+            'very fast sugu accelerating at incredible hihg speed' : {  'title': 'VERY fast sugu accelerating at incredible hihg speed',
+                                                                        'image': 'https://i.imgur.com/Aux5Xdh.png',
+                                                                        'source': 'https://kakashi-nenpo.com/jp/res/16966+50.html#21686',
+                                                                        'type': 'Fucking RIP',
+                                                                        'flavor': 'Basically, how it feels to play Suguri half the time.'},
 
             # Cards
 
@@ -38,6 +46,28 @@ cards = {
                             'type': 'Character',
                             'hyper': 'x16 Big Rocket',
                             'availability': 'Default'},
+
+            'yuki' : {      'title': 'Yuki',
+                            'image': 'https://i.imgur.com/ZsYMq5D.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Yuki',
+                            'type': 'Character',
+                            'hyper': 'Gamble!',
+                            'availability': 'Unlockable'},
+
+            'aru' : {       'title': 'Aru',
+                            'image': 'https://i.imgur.com/4x4rmwb.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Aru',
+                            'type': 'Character',
+                            'hyper': 'Present For You',
+                            'availability': 'Unlockable'},
+
+            'hime' : {      'title': 'Hime',
+                            'image': 'https://i.imgur.com/SDHLGY0.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Hime',
+                            'type': 'Character',
+                            'hyper': 'Binding Chains',
+                            'availability': 'Unlockable'},
+
 
             'star breaker' : {  'title': 'Star Breaker',
                                 'image': 'https://i.imgur.com/4432L2z.png',
@@ -73,6 +103,21 @@ cards = {
             'x16 big rocket' : {'title': 'x16 Big Rocket',
                                 'image': 'https://i.imgur.com/42GG1KI.png',
                                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Marc/Hyper',
+                                'type': 'Hyper'},
+
+            'gamble!' : {   'title': 'Gamble!',
+                            'image': 'https://i.imgur.com/GCvfufb.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Yuki/Hyper',
+                            'type': 'Hyper'},
+
+            'present for you' : {   'title': 'Present For You',
+                                    'image': 'https://i.imgur.com/0Mlr5Pk.png',
+                                    'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Aru/Hyper',
+                                    'type': 'Hyper'},
+
+            'binding chains' : {'title': 'Binding Chains',
+                                'image': 'https://i.imgur.com/9745ZAZ.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Hime/Hyper',
                                 'type': 'Hyper'},
 
             'star blasting fuse' : {'title': 'Star Blasting Fuse',
