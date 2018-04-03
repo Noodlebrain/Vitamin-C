@@ -135,7 +135,7 @@ cards = {
                                         'image': 'https://i.imgur.com/JrPSZiP.png',
                                         'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Sora/Hyper',
                                         'type': 'Hyper',
-                                        'flavor': '\"I hate RNG but I still play this game\"'}                    
+                                        'flavor': '\"I hate RNG but I still play this game\"'},                    
 
             'star blasting fuse' : {'title': 'Star Blasting Fuse',
                                     'image': 'https://i.imgur.com/PlcPxzV.png',
