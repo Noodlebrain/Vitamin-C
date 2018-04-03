@@ -79,6 +79,21 @@ cards = {
                         'availability': 'Unlockable',
                         'flavor': 'Also check out Sora (Military).'},
 
+            'fernet' : {'title': 'Fernet',
+                        'image': 'https://i.imgur.com/1qtP3sr.png',
+                        'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Fernet',
+                        'type': 'Character',
+                        'hyper': 'Air Strike',
+                        'availability': 'Unlockable',
+                        'flavor': '\"*Ara ara~*\"'},
+
+            'peat' : {  'title': 'Peat',
+                        'image': 'https://i.imgur.com/yb2Q01y.png',
+                        'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Peat',
+                        'type': 'Character',
+                        'hyper': 'Blue Crow the Second',
+                        'availability': 'Unlockable'},
+
             'star breaker' : {  'title': 'Star Breaker',
                                 'image': 'https://i.imgur.com/4432L2z.png',
                                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Star_Breaker',
@@ -135,7 +150,18 @@ cards = {
                                         'image': 'https://i.imgur.com/JrPSZiP.png',
                                         'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Sora/Hyper',
                                         'type': 'Hyper',
-                                        'flavor': '\"I hate RNG but I still play this game\"'},                    
+                                        'flavor': '\"I hate RNG but I still play this game\"'},
+
+            'air strike' : {'title': 'Air Strike',
+                            'image': 'https://i.imgur.com/XZEoVAF.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Fernet/Hyper',
+                            'type': 'Hyper',
+                            'flavor': '\"OHOHOHOHO\"'},
+
+            'blue crow the second' : {  'title': 'Blue Crow the Second',
+                                        'image': 'https://i.imgur.com/hMbzDij.png',
+                                        'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Peat/Hyper',
+                                        'type': 'Hyper'},                                
 
             'star blasting fuse' : {'title': 'Star Blasting Fuse',
                                     'image': 'https://i.imgur.com/PlcPxzV.png',
