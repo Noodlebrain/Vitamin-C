@@ -85,7 +85,7 @@ cards = {
                         'type': 'Character',
                         'hyper': 'Air Strike',
                         'availability': 'Unlockable',
-                        'flavor': '\"Ara ara~\"'},
+                        'flavor': 'Ara ara~'},
 
             'peat' : {  'title': 'Peat',
                         'image': 'https://i.imgur.com/yb2Q01y.png',
@@ -156,7 +156,7 @@ cards = {
                             'image': 'https://i.imgur.com/XZEoVAF.png',
                             'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Fernet/Hyper',
                             'type': 'Hyper',
-                            'flavor': '\"OHOHOHOHO\"'},
+                            'flavor': 'OHOHOHOHO'},
 
             'blue crow the second' : {  'title': 'Blue Crow the Second',
                                         'image': 'https://i.imgur.com/hMbzDij.png',
