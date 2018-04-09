@@ -35,18 +35,21 @@ async def action(message, client):
                 character = char_match.groups()[0].strip()
                 hyper_ret = findHyper(character)
                 if len(hyper_ret) < 1:
-                    msg = 'Could not find what you searched for, try again.'
+                    msg = 'Line 38: Could not find what you searched for, try again.'
                     await client.send_message(message.channel, msg)
+                    continue
 
                 elif len(hyper_ret) > 1:
                     msg = 'Multiple results found: \"{0}\"'.format("\", \"".join(x for x in hyper_ret))
                     await client.send_message(message.channel, msg)
+                    continue
 
                 else:
                     c = hyper_ret[0].lower()
-            else:
+            else: # This case is likely not going to happen due to regex, but just in case
                 msg = 'It seems like you didn\'t put anything before \".hyper\", try again'
                 await client.send_message(message.channel, msg)
+                continue
 
         if c in cards.keys():
             embed_msg = createEmbed(c)
@@ -55,7 +58,7 @@ async def action(message, client):
         else:   # no exact match, so search Wikia instead
             card_ret = wikiaSearch(c, False)
             if len(card_ret) < 1:
-                msg = 'Could not find what you searched for, try again.'
+                msg = 'Line 58: Could not find what you searched for, try again.'
                 await client.send_message(message.channel, msg)
 
             elif len(card_ret) > 1:
@@ -97,13 +100,21 @@ def findHyper(char):
             ret.append(cards[char]['hyper'])
             return ret
     # search 100% OJ Wikia for names of characters if there is no exact match
-    return wikiaSearch(char, True)
+    wikia_results =  wikiaSearch(char, True)
+    # uses the result list to look for hypers
+    if len(wikia_results) > 0:
+        for result in wikia_results:
+            entry = result.lower().strip()
+            if entry in cards.keys():
+                if cards[entry]['type'] == 'Character':
+                    ret.append(cards[entry]['hyper'])
+    return ret
 
 # Searches the 100% OJ Wikia for titles on its page - charsOnly is boolean to search for characters only, or for all cards
 def wikiaSearch(string, charsOnly):
     result_list = []
     try:
-        search_results = wikia.search('onehundredpercentorangejuice', string, 2)
+        search_results = wikia.search('onehundredpercentorangejuice', string, 3)
         for result in search_results:
             if result.lower().strip() in cards.keys():
                 if charsOnly == True:
