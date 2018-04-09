@@ -11,15 +11,6 @@ card_regex = re.compile('\[(.+?)\]')
 # regex searches for anything with .hyper in it
 hyper_regex = re.compile('(.+?)\.hyper$')
 
-# class that contains a boolean whether an operation was successful or not,
-# and a list of returned objects
-class ReturnResult:
-    results = []
-    success = True
-    def __init__(self, results, success):
-        self.results = results;
-        self.success = success;
-
 # Checks if anything in between square brackets
 def trigger(content):
     query = re.search(card_regex, content.lower().strip())
@@ -27,6 +18,9 @@ def trigger(content):
         return True
     return False
 
+# Action of this module - gets a card name from in between brackets, searches
+# for the matching card, and sends an
+# embed with information about the fetched card
 async def action(message, client):
     # Get all words in between square brackets
     results_list = re.findall(card_regex, message.content.lower().strip())

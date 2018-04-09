@@ -34,7 +34,7 @@ class TestCardMethods(unittest.TestCase):
         results_list = wikia.search('onehundredpercentorangejuice', group, 2)
         self.assertEqual(results_list[0].lower(), 'qp')
 
-    def test_card_wikia_search(self):
+    def test_card_wikiaSearch(self):
         match = re.search(cards.card_regex, '[][ qp]')
         group = match.groups()[0].strip()
         self.assertEqual(group, '][ qp')
