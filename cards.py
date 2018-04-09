@@ -35,7 +35,7 @@ async def action(message, client):
                 character = char_match.groups()[0].strip()
                 hyper_ret = findHyper(character)
                 if len(hyper_ret) < 1:
-                    msg = 'Line 38: Could not find what you searched for, try again.'
+                    msg = 'Could not find what you searched for, try again.'
                     await client.send_message(message.channel, msg)
                     continue
 
@@ -58,7 +58,7 @@ async def action(message, client):
         else:   # no exact match, so search Wikia instead
             card_ret = wikiaSearch(c, False)
             if len(card_ret) < 1:
-                msg = 'Line 58: Could not find what you searched for, try again.'
+                msg = 'Could not find what you searched for, try again.'
                 await client.send_message(message.channel, msg)
 
             elif len(card_ret) > 1:
