@@ -13,7 +13,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print('Link for inviting bot to servers:\nhttps://discordapp.com/api/oauth2/authorize?client_id='+ client.user.id + '&permissions=36785152&scope=bot')
+    print('Link for inviting bot to servers:\nhttps://discordapp.com/api/oauth2/authorize?client_id='+ client.user.id + '&permissions=0&scope=bot')
     print('Logged in as')
     print(client.user.name)
     print('Client ID: ' + client.user.id)

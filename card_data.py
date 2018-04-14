@@ -1,6 +1,126 @@
 
 cards = {
             # Cards
+            'final battle' : {  'title': 'Final Battle',
+                                'image': 'https://i.imgur.com/VdKzE7a.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Final_Battle',
+                                'type': 'Battle',
+                                'availability': 'Basic Set'},
+
+            'i\'m on fire!' : { 'title': 'I\'m on Fire!',
+                                'image': 'https://i.imgur.com/1wApzxw.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/I%27m_on_Fire!',
+                                'type': 'Battle',
+                                'availability': 'Basic Set'},
+
+            'rainbow-colored circle' : {'title': 'Rainbow-Colored Circle',
+                                        'image': 'https://i.imgur.com/yNISVvK.png',
+                                        'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Rainbow-Colored_Circle',
+                                        'type': 'Battle',
+                                        'availability': 'Basic Set'},
+
+            'rbits' : { 'title': 'Rbits',
+                        'image': 'https://i.imgur.com/Bd0Mol9.png',
+                        'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Rbits',
+                        'type': 'Battle',
+                        'availability': 'Basic Set'},
+
+            'dash!' : { 'title': 'Dash!',
+                        'image': 'https://i.imgur.com/xTqAB6u.png',
+                        'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Dash!',
+                        'type': 'Boost',
+                        'availability': 'Basic Set'},
+
+            'flip out' : {  'title': 'Flip Out',
+                            'image': 'https://i.imgur.com/qfnLKTB.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Flip_Out',
+                            'type': 'Boost',
+                            'availability': 'Basic Set'},
+
+            'nice jingle' : {   'title': 'Nice Jingle',
+                                'image': 'https://i.imgur.com/wx1b9Zn.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Nice_Jingle',
+                                'type': 'Boost',
+                                'availability': 'Basic Set'},
+
+            'nice present' : {  'title': 'Nice Present',
+                                'image': 'https://i.imgur.com/oBCubtj.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Nice_Present',
+                                'type': 'Boost',
+                                'availability': 'Basic Set',
+                                'flavor': 'Next, I play the magic card Pot of Greed!'},
+
+            'pudding' : {   'title': 'Pudding',
+                            'image': 'https://i.imgur.com/YfAicpl.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Pudding',
+                            'type': 'Boost',
+                            'availability': 'Basic Set'},
+
+            'saki\'s cookie' : {'title': 'Saki\'s Cookie',
+                                'image': 'https://i.imgur.com/gXHq7EA.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Saki%27s_Cookie',
+                                'type': 'Boost',
+                                'availability': 'Basic Set'},
+
+            'gift exchange' : { 'title': 'Gift Exchange',
+                                'image': 'https://i.imgur.com/WDzZx9X.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Gift_Exchange',
+                                'type': 'Event',
+                                'availability': 'Basic Set'},
+
+            'here and there' : {'title': 'Here and There',
+                                'image': 'https://i.imgur.com/t14HbBG.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Here_and_There',
+                                'type': 'Event',
+                                'availability': 'Basic Set'},
+
+            'holy night' : {'title': 'Holy Night',
+                            'image': 'https://i.imgur.com/vCJMOO5.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Holy_Night',
+                            'type': 'Event',
+                            'availability': 'Basic Set'},
+
+            'little war' : {'title': 'Little War',
+                            'image': 'https://i.imgur.com/pjlRZDY.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Little_War',
+                            'type': 'Event',
+                            'availability': 'Basic Set'},
+
+            'out of ammo' : {   'title': 'Out of Ammo',
+                                'image': 'https://i.imgur.com/nAeeul3.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Out_of_Ammo',
+                                'type': 'Event',
+                                'availability': 'Basic Set'},
+
+            'assault' : {   'title': 'Assault',
+                            'image': 'https://i.imgur.com/0aOAwjw.png',
+                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Assault',
+                            'type': 'Trap',
+                            'availability': 'Basic Set'},
+
+            'bad pudding' : {   'title': 'Bad Pudding',
+                                'image': 'https://i.imgur.com/B7RPLkP.png',
+                                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Bad_Pudding',
+                                'type': 'Trap',
+                                'availability': 'Basic Set'},
+
+            'dangerous pudding' : { 'title': 'Dangeorus Pudding',
+                                    'image': 'https://i.imgur.com/WBzkRqZ.png',
+                                    'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Dangerous_Pudding',
+                                    'type': 'Trap',
+                                    'availability': 'Basic Set'},
+
+            'mimyuu\'s hammer' : {  'title': 'Mimyuu\'s Hammer',
+                                    'image': 'https://i.imgur.com/Dtrqrbd.png',
+                                    'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Mimyuu%27s_Hammer',
+                                    'type': 'Trap',
+                                    'availability': 'Basic Set'},
+
+            'sky restaurant \'pures\'' : {  'title': 'Sky Restaurant \'Pures\'',
+                                            'image': 'https://i.imgur.com/1qR0CY0.png',
+                                            'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Sky_Restaurant_%27Pures%27',
+                                            'type': 'Trap',
+                                            'availability': 'Basic Set'},                        
 
             # Joke cards
             'pot of greed' : {  'title': 'Pot of Greed',
@@ -8,7 +128,7 @@ cards = {
                                 'source': 'https://www.youtube.com/watch?v=Ay_S8NjPEXk',
                                 'type': 'Boost',
                                 'availability': 'GameBanana',
-                                'flavor': 'Let\'s be honest, Nice Present is basically Pot of Greed.'},
+                                'flavor': 'Let\'s be honest, Nice Present = Pot of Greed.'},
 
             'im accelerating' : {   'title': '\"I\'m accelerating.\"',
                                     'image': 'https://i.imgur.com/z893P16.png',
