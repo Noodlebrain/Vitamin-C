@@ -139,7 +139,7 @@ def set_color(type):
         return Color(0xE28FFF)
     elif type == 'Gift':
         return Color(0xFC8BC6)
-    elif type == 'Hyper':
+    elif type.startswith('Hyper'):
         return Color.orange()
     elif type == 'Character':
         return Color.lighter_grey()
