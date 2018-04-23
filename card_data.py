@@ -498,7 +498,14 @@ cards = {
                 'image': 'https://i.imgur.com/nYgVNsN.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Wanted',
                 'type': 'Trap',
-                'availability': 'Community Pack'},        
+                'availability': 'Community Pack'},
+
+            'sweet battle!' : {
+                'title': 'Sweet Battle!',
+                'image': 'https://i.imgur.com/P8Intex.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Sweet_Battle!',
+                'type': 'Gift',
+                'availability': 'Valentine\'s Day Event'},
 
             # Joke cards
             'pot of greed': {
