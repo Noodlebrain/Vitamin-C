@@ -374,6 +374,132 @@ cards = {
                 'type': 'Trap',
                 'availability': 'DLC 3 - Mixed Booster Pack'},
 
+            'accel hyper': {
+                'title': 'Accel Hyper',
+                'image': 'https://i.imgur.com/QASp1Sn.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Accel_Hyper',
+                'type': 'Battle',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'extension': {
+                'title': 'Extension',
+                'image': 'https://i.imgur.com/wZFu99g.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Extension',
+                'type': 'Battle',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'quick restoration': {
+                'title': 'Quick Restoration',
+                'image': 'https://i.imgur.com/MhuS34t.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Quick_Restoration',
+                'type': 'Battle',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'completion reward': {
+                'title': 'Completion Reward'
+                'image': 'https://i.imgur.com/WISvCwl.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Completion_Reward',
+                'type': 'Boost',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'gentleman\'s battle' : {
+                'title': 'Gentleman\'s Battle',
+                'image': 'https://i.imgur.com/zztIQqe.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Gentleman%27s_Battle',
+                'type': 'Boost',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'play of the gods' : {
+                'title': 'Play of the Gods',
+                'image': 'https://i.imgur.com/Aqglo08.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Play_of_the_Gods',
+                'type': 'Event',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'scrambled eve' : {
+                'title': 'Scrambled Eve',
+                'image': 'https://i.imgur.com/HaNEa7H.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Scrambled_Eve',
+                'type': 'Event',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'star-blasting light' : {
+                'title': 'Star-Blasting Light',
+                'image': 'https://i.imgur.com/2svsw0J.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Star-Blasting_Light',
+                'type': 'Event',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'unlucky charm' : {
+                'title': 'Unlucky Charm',
+                'image': 'https://i.imgur.com/05XVGM3.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Unlucky_Charm',
+                'type': 'Gift',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'windy enchantment' : {
+                'title': 'Windy Enchantment',
+                'image': 'https://i.imgur.com/bUaclXL.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Windy_Enchantment',
+                'type': 'Gift',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'brutal prank' : {
+                'title': 'Brutal Prank',
+                'image': 'https://i.imgur.com/43vpk8R.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Brutal_Prank',
+                'type': 'Trap',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'present thief' : {
+                'title': 'Present Thief',
+                'image': 'https://i.imgur.com/fPCuErk.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Present_Thief',
+                'type': 'Trap',
+                'availability': 'DLC 8 - Acceleration Pack'},
+
+            'dark side of business' : {
+                'title': 'Dark Side of Business',
+                'image': 'https://i.imgur.com/2VQogyH.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Dark_Side_of_Business',
+                'type': 'Battle',
+                'availability': 'Community Pack'},
+
+            'treasure thief' : {
+                'title': 'Treasure Thief',
+                'image': 'https://i.imgur.com/9fFptuk.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Treasure_Thief',
+                'type': 'Boost',
+                'availability': 'Community Pack'},
+
+            'party time' : {
+                'title': 'Party Time',
+                'image': 'https://i.imgur.com/rGooevA.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Party_Time',
+                'type': 'Event',
+                'availability': 'Community Pack'},
+
+            'lost child' : {
+                'title': 'Lost Child',
+                'image': 'https://i.imgur.com/nQPLJe9.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Lost_Child',
+                'type': 'Gift',
+                'availbility': 'Community Pack'},
+
+            'price of power' : {
+                'title': 'Price of Power',
+                'image': 'https://i.imgur.com/RiA7iEf.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Price_of_Power',
+                'type': 'Gift',
+                'availability': 'Community Pack'},
+
+            'wanted' : {
+                'title': 'Wanted',
+                'image': 'https://i.imgur.com/nYgVNsN.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Wanted',
+                'type': 'Trap',
+                'availability': 'Community Pack'},        
+
             # Joke cards
             'pot of greed': {
                 'title': 'Pot of Greed',
