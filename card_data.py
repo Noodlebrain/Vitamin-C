@@ -396,7 +396,7 @@ cards = {
                 'availability': 'DLC 8 - Acceleration Pack'},
 
             'completion reward': {
-                'title': 'Completion Reward'
+                'title': 'Completion Reward',
                 'image': 'https://i.imgur.com/WISvCwl.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Completion_Reward',
                 'type': 'Boost',
