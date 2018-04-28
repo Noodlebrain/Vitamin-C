@@ -1227,7 +1227,7 @@ cards = {
 
             'revival of stars': {
                 'title': 'Revival of Stars',
-                'image': 'https://i.imgur.com/DIjXcjg.png',
+                'image': 'https://i.imgur.com/UIVnPKf.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Suguri_(Ver.2)/Hyper',
                 'type': 'Hyper (Event)'},
 
