@@ -4,8 +4,8 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-import cards
-plugins = [cards]
+import cards, extension, potg
+plugins = [cards, extension, potg]
 
 from config import token
 

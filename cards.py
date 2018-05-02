@@ -1,7 +1,7 @@
+import re
 from discord import Embed
 from discord import Color
 import wikia
-import re
 
 from card_data import cards
 
@@ -29,11 +29,11 @@ async def action(message, client):
         c = result.strip()
 
         # check if the string between the [] has .hyper at the end
-        if isHyper(result):
+        if is_hyper(result):
             char_match = re.search(hyper_regex, result.strip())
             if char_match:
                 character = char_match.groups()[0].strip()
-                hyper_ret = findHyper(character)
+                hyper_ret = find_hyper(character)
                 if len(hyper_ret) < 1:
                     msg = 'Could not find what you searched for, try again.'
                     await client.send_message(message.channel, msg)
@@ -52,11 +52,11 @@ async def action(message, client):
                 continue
 
         if c in cards.keys():
-            embed_msg = createEmbed(c)
+            embed_msg = create_embed(c)
             await client.send_message(message.channel, embed = embed_msg)
 
         else:   # no exact match, so search Wikia instead
-            card_ret = wikiaSearch(c, False)
+            card_ret = wikia_search(c, False)
             if len(card_ret) < 1:
                 msg = 'Could not find what you searched for, try again.'
                 await client.send_message(message.channel, msg)
@@ -67,11 +67,11 @@ async def action(message, client):
 
             else:
                 c = card_ret[0].lower()
-                embed_msg = createEmbed(c)
+                embed_msg = create_embed(c)
                 await client.send_message(message.channel, embed = embed_msg)
 
 # creates an embed using the provided card name
-def createEmbed(card):
+def create_embed(card):
     embed_message = Embed(  title = cards[card]['title'],
                             type = 'rich',
                             url = cards[card]['source'])
@@ -86,21 +86,21 @@ def createEmbed(card):
     return embed_message
 
 # Checks if the string has .hyper in it.
-def isHyper(string):
+def is_hyper(string):
     character = re.search(hyper_regex, string.strip())
     if character:
         return True
     return False
 
 # Finds the name of a character's hyper card.
-def findHyper(char):
+def find_hyper(char):
     ret = []
     if char in cards.keys():
         if cards[char]['type'] == 'Character':
             ret.append(cards[char]['hyper'])
             return ret
     # search 100% OJ Wikia for names of characters if there is no exact match
-    wikia_results =  wikiaSearch(char, True)
+    wikia_results =  wikia_search(char, True)
     # uses the result list to look for hypers
     if len(wikia_results) > 0:
         for result in wikia_results:
@@ -111,7 +111,7 @@ def findHyper(char):
     return ret
 
 # Searches the 100% OJ Wikia for titles on its page - charsOnly is boolean to search for characters only, or for all cards
-def wikiaSearch(string, charsOnly):
+def wikia_search(string, charsOnly):
     result_list = []
     try:
         search_results = wikia.search('onehundredpercentorangejuice', string, 3)

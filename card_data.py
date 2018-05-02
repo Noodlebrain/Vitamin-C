@@ -666,8 +666,8 @@ cards = {
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Chicken',
                 'type': 'Character',
                 'hyper': 'Golden Egg',
-                'flavor': 'For the enemy, see \"Chicken (Enemy)\".'},
                 'availability': 'Unlockable',
+                'flavor': 'For the enemy, see \"Chicken (Enemy)\".'},
 
             'robo ball': {
                 'title': 'Robo Ball',
