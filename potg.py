@@ -1,4 +1,5 @@
 import random
+import time
 from discord import Embed
 from discord import Color
 
@@ -26,8 +27,12 @@ def trigger(content):
     return content.startswith('C!playofthegods') or content.startswith('C!potg')
 
 async def action(message, client):
+    potg_embed = Embed(title = 'Playing...', type = 'rich', color = Color(0x93C0FF))
+    potg_embed.set_image(url = cards['play of the gods']['image'])
+    msg = await client.send_message(message.channel, embed = potg_embed)
     random_card = random.choice(potg_cards)
-    msg = 'Your card is...'
+    time.sleep(1)
+    msg_text = 'Your card is...'
     embed_msg = create_embed(random_card)
-    await client.send_message(message.channel, msg, embed = embed_msg)
+    await client.edit_message(msg, new_content = msg_text, embed = embed_msg)
     return
