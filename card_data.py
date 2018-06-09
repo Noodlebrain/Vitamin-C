@@ -932,11 +932,27 @@ cards = {
 
             'suguri (ver.2)': {
                 'title': 'Suguri (ver.2)',
-                'image': 'https://i.imgur.com/Nm0ZNz0.png',
+                'image': 'https://i.imgur.com/RJJBggD.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Suguri_(Ver.2)',
                 'type': 'Character',
                 'hyper': 'Revival of Stars',
                 'availability': 'Bonus - Acceleration of SUGURI 2'},
+
+            'tsih': {
+                'title': 'Tsih',
+                'image': 'https://i.imgur.com/Fb6LzQw.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Tsih',
+                'type': 'Character',
+                'hyper': 'Stealth On',
+                'availability': 'DLC 17 - Tsih & Tequila Character Pack'},
+
+            'tequila': {
+                'title': 'Tequila',
+                'image': 'https://i.imgur.com/MxYt2Df.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Tequila',
+                'type': 'Character',
+                'hyper': 'Do Pirates Fly In the Sky?',
+                'availability': 'DLC 17 - Tsih & Tequila Character Pack'},
 
             ##################################
             # Character-specific Hyper cards
@@ -1092,7 +1108,7 @@ cards = {
 
             'blazing!': {
                 'title': 'Blazing!',
-                'image': 'https://i.imgur.com/hxtgTEt.png',
+                'image': 'https://i.imgur.com/eWSh47o.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Kae/Hyper',
                 'type': 'Hyper (Boost)'},
 
@@ -1231,6 +1247,23 @@ cards = {
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Suguri_(Ver.2)/Hyper',
                 'type': 'Hyper (Event)'},
 
+            'stealth on': {
+                'title': 'Stealth On',
+                'image': 'https://i.imgur.com/yi14FnQ.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Tsih/Hyper',
+                'type': 'Hyper (Boost)'},
+
+            'do pirates fly in the sky?': {
+                'title': 'Do Pirates Fly In The Sky?',
+                'image': 'https://i.imgur.com/9LeFC51.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Tequila/Hyper',
+                'type': 'Hyper (Event)'},
+            'flying pirate': {
+                'title': 'Flying Pirate',
+                'image': 'https://i.imgur.com/kngAroz.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Tequila/Hyper',
+                'type': 'Hyper (Trap)'},
+
             ##################################
             # Enemies
             ##################################
@@ -1275,5 +1308,11 @@ cards = {
                 'image': 'https://i.imgur.com/9njXgnd.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Marie_Poppo',
                 'type': 'Enemy'},
+
+            'pirate crew member': {
+                'title': 'Pirate Crew Member',
+                'image': 'https://i.imgur.com/2FUpQhN.png',
+                'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Tequila#Pirate%20Crew%20Member',
+                'type': 'Unit (Player)'},    
 
          }
