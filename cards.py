@@ -34,16 +34,9 @@ async def action(message, client):
             if char_match:
                 character = char_match.groups()[0].strip()
                 hyper_ret = find_hyper(character)
-                if len(hyper_ret) < 1:
-                    msg = 'Could not find what you searched for, try again.'
-                    await client.send_message(message.channel, msg)
-                    continue
-
-                elif len(hyper_ret) > 1:
-                    msg = 'Multiple results found: \"{0}\"'.format("\", \"".join(x for x in hyper_ret))
-                    await client.send_message(message.channel, msg)
-                    continue
-
+                err_msg = wikia_parse(hyper_ret, client)
+                if err_msg:
+                    await client.send_message(message.channel, err_msg)
                 else:
                     c = hyper_ret[0].lower()
             else: # This case is likely not going to happen due to regex, but just in case
@@ -51,24 +44,20 @@ async def action(message, client):
                 await client.send_message(message.channel, msg)
                 continue
 
-        if c in cards.keys():
-            embed_msg = create_embed(c)
-            await client.send_message(message.channel, embed = embed_msg)
-
-        else:   # no exact match, so search Wikia instead
+        if c not in cards.keys():   # no exact match, so search Wikia instead
             card_ret = wikia_search(c, False)
-            if len(card_ret) < 1:
-                msg = 'Could not find what you searched for, try again.'
-                await client.send_message(message.channel, msg)
-
-            elif len(card_ret) > 1:
-                msg = 'Multiple results found: \"{0}\"'.format("\", \"".join(x for x in card_ret))
-                await client.send_message(message.channel, msg)
-
+            err_msg = wikia_parse(card_ret, client)
+            if err_msg:
+                await client.send_message(message.channel, err_msg)
+                return
             else:
                 c = card_ret[0].lower()
-                embed_msg = create_embed(c)
-                await client.send_message(message.channel, embed = embed_msg)
+
+        embed_msg = create_embed(c)
+        await client.send_message(message.channel, embed = embed_msg)
+        if cards[c]['linked']:
+            embed_msg = create_embed(cards[c]['linked'])
+            await client.send_message(message.channel, embed = embed_msg)
 
 # creates an embed using the provided card name
 def create_embed(card):
@@ -126,6 +115,18 @@ def wikia_search(string, charsOnly):
         return result_list
     return result_list
 
+# parses a wikia search result to see if it has 1 result only
+# returns empty msg if only 1 result
+# returns a corresponding message if 0 or 2+ results
+def wikia_parse(wikia_results, client):
+    msg = ''
+    numResults = len(wikia_results)
+    if numResults != 1:
+        if numResults < 1:
+            msg = 'Could not find what you searched for, try again.'
+        if numResults > 1:
+            msg = 'Multiple results found: \"{0}\"'.format("\", \"".join(x for x in card_ret))
+    return msg
 
 # Sets the color of the Discord embed based on the card type
 def set_color(type):

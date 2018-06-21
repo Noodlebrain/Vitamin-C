@@ -24,7 +24,8 @@ potg_cards = generate_potg_cards()
 
 # checks if typed message is "C!playofthegods" or abbreviation "C!potg"
 def trigger(content):
-    return content.startswith('C!playofthegods') or content.startswith('C!potg')
+    stripped = content.strip()
+    return stripped.startswith('c!playofthegods') or stripped.startswith('c!potg')
 
 async def action(message, client):
     potg_embed = Embed(title = 'Playing...', type = 'rich', color = Color(0x93C0FF))

@@ -22,7 +22,8 @@ ext_cards = generate_extension_cards()
 
 # checks if typed message is "C!extension" or abbreviation "C!ext"
 def trigger(content):
-    return content.startswith('C!extension') or content.startswith('C!ext')
+    stripped = content.strip()
+    return stripped.startswith('c!extension') or stripped.startswith('c!ext')
 
 async def action(message, client):
     ext_embed = Embed(title = 'Playing...', type = 'rich', color = Color.orange())

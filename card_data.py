@@ -1099,7 +1099,8 @@ cards = {
                 'title': 'Plushie Master',
                 'image': 'https://i.imgur.com/FttL26C.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Krila/Hyper',
-                'type': 'Hyper (Event)'},
+                'type': 'Hyper (Event)',
+                'linked': 'dance, long-eared beasts!'},
             'dance, long-eared beasts!': {
                 'title': 'Dance, Long-Eared Beasts!',
                 'image': 'https://i.imgur.com/Qya5Kwy.png',
@@ -1140,7 +1141,8 @@ cards = {
                 'title': 'Star Blasting Fuse',
                 'image': 'https://i.imgur.com/PlcPxzV.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Star_Breaker/Hyper',
-                'type': 'Hyper (Event)'},
+                'type': 'Hyper (Event)',
+                'linked': 'invisible bomb'},
             'invisible bomb': {
                 'title': 'Invisible Bomb',
                 'image': 'https://i.imgur.com/UMzUXJX.png',
@@ -1168,7 +1170,8 @@ cards = {
                 'title': 'Evil Spy Work - Preparation',
                 'image': 'https://i.imgur.com/cM4CQmY.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Tomato_%26_Mimyuu',
-                'type': 'Hyper (Event)'},
+                'type': 'Hyper (Event)',
+                'linked': 'evil spy work - execution'},
             'evil spy work - execution': {
                 'title' : 'Evil Spy Work - Execution',
                 'image': 'https://i.imgur.com/XxIkeqd.png',
@@ -1257,7 +1260,8 @@ cards = {
                 'title': 'Do Pirates Fly In The Sky?',
                 'image': 'https://i.imgur.com/9LeFC51.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Tequila/Hyper',
-                'type': 'Hyper (Event)'},
+                'type': 'Hyper (Event)',
+                'linked': 'flying pirate'},
             'flying pirate': {
                 'title': 'Flying Pirate',
                 'image': 'https://i.imgur.com/kngAroz.png',
@@ -1313,6 +1317,6 @@ cards = {
                 'title': 'Pirate Crew Member',
                 'image': 'https://i.imgur.com/2FUpQhN.png',
                 'source': 'http://onehundredpercentorangejuice.wikia.com/wiki/Tequila#Pirate%20Crew%20Member',
-                'type': 'Unit (Player)'},    
+                'type': 'Unit (Player)'},
 
          }
