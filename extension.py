@@ -22,7 +22,7 @@ ext_cards = generate_extension_cards()
 
 # checks if typed message is "C!extension" or abbreviation "C!ext"
 def trigger(content):
-    stripped = content.strip()
+    stripped = content.strip().lower()
     return stripped.startswith('c!extension') or stripped.startswith('c!ext')
 
 async def action(message, client):
