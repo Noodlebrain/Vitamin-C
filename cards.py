@@ -125,7 +125,7 @@ def wikia_parse(wikia_results, client):
         if numResults < 1:
             msg = 'Could not find what you searched for, try again.'
         if numResults > 1:
-            msg = 'Multiple results found: \"{0}\"'.format("\", \"".join(x for x in card_ret))
+            msg = 'Multiple results found: \"{0}\"'.format("\", \"".join(x for x in wikia_results))
     return msg
 
 # Sets the color of the Discord embed based on the card type

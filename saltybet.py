@@ -47,8 +47,10 @@ async def action(message, client):
                 await client.send_message(message.channel, msg)
                 break
             else:
-                attacker = r_char
-                defender = l_char
+                # swap attacker and defender positions
+                temp = attacker
+                attacker = defender
+                defender = temp
             n += 1
         battle_num += 1
 
