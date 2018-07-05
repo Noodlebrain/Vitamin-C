@@ -1,3 +1,4 @@
+from characters import chars
 import random
 
 def trigger(content):
@@ -5,9 +6,10 @@ def trigger(content):
     return stripped.startswith('c!saltybet')
 
 async def action(message, client):
-    #   Test function - battle between Kai and Suguri
-    l_char = Character('Kai', 5, 1, 0, 0)
-    r_char = Character('Suguri', 4, 1, -1, 2)
+    rand_l_char = random.choice(chars)
+    rand_r_char = random.choice(chars)
+    l_char = Character(rand_l_char['name'], rand_l_char['hp'], rand_l_char['atk'], rand_l_char['defense'], rand_l_char['evd'])
+    r_char = Character(rand_r_char['name'], rand_r_char['hp'], rand_r_char['atk'], rand_r_char['defense'], rand_r_char['evd'])
     msg = 'Battle between {} (HP: {}/{}, ATK: {}, DEF: {}, EVD: {}) and {} (HP: {}/{}, ATK: {}, DEF: {}, EVD: {})'.format(
             l_char.name, l_char.hp, l_char.max_hp, l_char.atk, l_char.defense, l_char.evd,
             r_char.name, r_char.hp, r_char.max_hp, r_char.atk, r_char.defense, r_char.evd)
@@ -42,7 +44,7 @@ async def action(message, client):
             defender.take_dmg(response[2])
             dmg_msg += '\n{} has {} HP left.'.format(defender.name, defender.hp)
             await client.send_message(message.channel, dmg_msg)
-            if defender.hp <= 0:
+            if defender.hp <= 0:    # if attacker KOs defender
                 msg = attacker.name + ' wins!'
                 await client.send_message(message.channel, msg)
                 break
@@ -66,6 +68,8 @@ class Character:
         self.hp = max(self.hp - dmg, 0)
     def heal(self, dmg):
         self.hp = min(self.hp + dmg, self.max_hp)
+    def set_hp(self, hp):
+        self.hp = min(hp, self.max_hp)
 
 def attack(char, modifier):
     roll = random.randint(1, 6)
