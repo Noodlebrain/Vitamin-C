@@ -23,8 +23,8 @@ def generate_potg_cards():
 potg_cards = generate_potg_cards()
 
 # checks if typed message is "C!playofthegods" or abbreviation "C!potg"
-def trigger(content):
-    stripped = content.strip().lower()
+def trigger(message, client):
+    stripped = message.content.strip().lower()
     return stripped.startswith('c!playofthegods') or stripped.startswith('c!potg')
 
 async def action(message, client):

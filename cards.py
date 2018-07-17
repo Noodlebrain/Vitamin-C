@@ -12,8 +12,10 @@ card_regex = re.compile('\[(.+?)\]')
 hyper_regex = re.compile('(.+?)\.hyper$')
 
 # Checks if anything in between square brackets
-def trigger(content):
-    query = re.search(card_regex, content.lower().strip())
+def trigger(message, client):
+    if client.user not in message.mentions:
+        return False
+    query = re.search(card_regex, message.content.lower().strip())
     if query and query.groups()[0].strip():
         return True
     return False
@@ -55,7 +57,7 @@ async def action(message, client):
 
         embed_msg = create_embed(c)
         await client.send_message(message.channel, embed = embed_msg)
-        if cards[c]['linked']:
+        if 'linked' in cards[c]:
             embed_msg = create_embed(cards[c]['linked'])
             await client.send_message(message.channel, embed = embed_msg)
 

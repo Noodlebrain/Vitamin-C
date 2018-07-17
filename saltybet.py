@@ -1,8 +1,8 @@
 from characters import chars
 import random
 
-def trigger(content):
-    stripped = content.strip().lower()
+def trigger(message, client):
+    stripped = message.content.strip().lower()
     return stripped.startswith('c!saltybet')
 
 async def action(message, client):

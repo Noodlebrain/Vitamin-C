@@ -26,7 +26,7 @@ async def on_message(message):
         return
 
     for plugin in plugins:
-        if plugin.trigger(message.content) == True:
+        if plugin.trigger(message, client) == True:
             await plugin.action(message, client)
             return
 
