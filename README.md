@@ -19,4 +19,6 @@ C!playofthegods (or C!potg) fetches a random Event card. (Yes, this isn't how Pl
 
 C!extention (or C!ext) fetches a random Battle card, as if you had played the card Extension.
 
-***More features and functionality coming soon!***
+C!saltybet allows you to run a simulated battle between randomly selected characters (currently only supports the starting 4 characters).
+
+***More features and functionality to come in the future.***
