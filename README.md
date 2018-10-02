@@ -15,10 +15,10 @@ and it will show Suguri's character card.
 Mentioning multiple cards in a single message will also work: the bot will fetch information about each one in order.  
 (i.e. "[Kai] just defeated [QP] and was going to win, but his home was rigged with Saki's [Big Bang Bell].")
 
-C!playofthegods (or C!potg) fetches a random Event card. (Yes, this isn't how Play of the Gods works in-game, but it's kinda close, right?)
+**C!playofthegods** (or **C!potg**) fetches a random Event card. (Yes, this isn't how Play of the Gods works in-game, but it's kinda close, right?)
 
-C!extention (or C!ext) fetches a random Battle card, as if you had played the card Extension.
+**C!extention** (or **C!ext**) fetches a random Battle card, as if you had played the card Extension.
 
-C!saltybet allows you to run a simulated battle between randomly selected characters (currently only supports the starting 4 characters).
+**C!saltybet** allows you to run a simulated battle between randomly selected characters (currently only supports the starting 4 characters).
 
 ***More features and functionality to come in the future.***
